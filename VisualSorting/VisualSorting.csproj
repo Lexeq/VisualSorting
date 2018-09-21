@@ -46,6 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sortings\BubbleSort.cs" />
     <Compile Include="Sortings\EventArgs.cs" />
+    <Compile Include="Sortings\InsertionSort.cs" />
     <Compile Include="Sortings\ISortingCollection.cs" />
     <Compile Include="Sortings\ListWrapper.cs" />
     <Compile Include="Sortings\VisualSort.cs" />
