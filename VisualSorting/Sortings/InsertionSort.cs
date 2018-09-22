@@ -6,10 +6,10 @@
         {
             for (int i = 1; i < collection.Count; i++)
             {
-                for (int j = i; j >= 0; j--)
+                for (int j = i; j > 0; j--)
                 {
-                    if (collection.Compare(j, j - i) < 0)
-                        collection.Swap(j, j - i);
+                    if (collection.Compare(j, j - 1) < 0)
+                        collection.Swap(j, j - 1);
                 }
             }
         }
