@@ -10,6 +10,8 @@
                 {
                     if (collection.Compare(j, j - 1) < 0)
                         collection.Swap(j, j - 1);
+                    else
+                        break;
                 }
             }
         }
