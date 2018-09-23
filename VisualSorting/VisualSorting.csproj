@@ -49,6 +49,7 @@
     <Compile Include="Sortings\InsertionSort.cs" />
     <Compile Include="Sortings\ISortingCollection.cs" />
     <Compile Include="Sortings\ListWrapper.cs" />
+    <Compile Include="Sortings\QuickSort.cs" />
     <Compile Include="Sortings\SelectionSort.cs" />
     <Compile Include="Sortings\VisualSort.cs" />
   </ItemGroup>
