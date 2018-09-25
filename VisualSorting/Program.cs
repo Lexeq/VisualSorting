@@ -33,7 +33,8 @@ namespace VisualSorting
             {
                 new BubbleSort(),
                 new InsertionSort(),
-                new SelectionSort()
+                new SelectionSort(),
+                new QuickSort()
             };
 
             var array = Array.AsReadOnly(GetArray(arraySize));

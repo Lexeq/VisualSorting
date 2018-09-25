@@ -37,7 +37,11 @@
                 if (left >= right)
                     return right;
 
-               collection.Swap(left, right);
+                collection.Swap(left, right);
+                if (left == pi)
+                    pi = right;
+                else if (right == pi)
+                    pi = left;
             }
         }
     }
