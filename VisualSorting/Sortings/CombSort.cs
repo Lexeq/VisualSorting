@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VisualSorting.Sortings
 {
-    class CombSort : VisualSort
+    public class CombSort : VisualSort
     {
         private const double shrinkFactor = 1.3;
         protected override void InternalSort(ISortingCollection collection)

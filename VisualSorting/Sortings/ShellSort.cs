@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace VisualSorting.Sortings
 {
-    class ShellSort : VisualSort
+    public class ShellSort : VisualSort
     {
         static readonly IList<int> steps = new ReadOnlyCollection<int>(new List<int>
         {

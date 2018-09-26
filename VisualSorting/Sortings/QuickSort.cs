@@ -1,6 +1,6 @@
 ﻿namespace VisualSorting.Sortings
 {
-    class QuickSort : VisualSort
+    public class QuickSort : VisualSort
     {
         protected override void InternalSort(ISortingCollection collection)
         {
