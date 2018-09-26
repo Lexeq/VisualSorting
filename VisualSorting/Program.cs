@@ -32,6 +32,7 @@ namespace VisualSorting
             VisualSort[] sorts = new VisualSort[]
             {
                 new BubbleSort(),
+                new CombSort(),
                 new InsertionSort(),
                 new SelectionSort(),
                 new QuickSort()
