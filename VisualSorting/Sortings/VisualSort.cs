@@ -9,10 +9,6 @@ namespace VisualSorting.Sortings
 
         public event EventHandler<SwappedEventArgs> Swapped;
 
-        public int SwapCount { get; private set; }
-
-        public int CompareCount { get; private set; }
-
         public void Sort<T>(IList<T> list)
         {
             Sort(list, Comparer<T>.Default);
@@ -37,14 +33,12 @@ namespace VisualSorting.Sortings
 
         private void OnCompared(object sender, ComparedEventArgs e)
         {
-            CompareCount++;
             var handler = Compared;
             handler?.Invoke(this, e);
         }
 
         private void OnSwapped(object sender, SwappedEventArgs e)
         {
-            SwapCount++;
             var handler = Swapped;
             handler?.Invoke(this, e);
         }

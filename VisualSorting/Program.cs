@@ -25,6 +25,10 @@ namespace VisualSorting
 
         private static int[] ProcessingArray;
 
+        private static int swapCount;
+
+        private static int compareCount;
+
         static void Main(string[] args)
         {
             Init();
@@ -50,12 +54,15 @@ namespace VisualSorting
                 Console.WriteLine(sort.GetType().Name);
                 Subscribe(sort);
                 ProcessingArray = array.ToArray();
+                compareCount = 0;
+                swapCount = 0;
                 sort.Sort(ProcessingArray);
                 PrintProcessingArray();
-                Console.WriteLine($"\nСomparisons: {sort.CompareCount} Swaps: {sort.SwapCount}\n");
+                Console.WriteLine($"\nСomparisons: {compareCount} Swaps: {swapCount}\n");
                 Unsubscribe(sort);
             }
         }
+
         private static void Init()
         {
             Console.WriteLine("Enter parameters: [arraySize delay]");
@@ -86,11 +93,13 @@ namespace VisualSorting
 
         private static void Swapped(object sender, SwappedEventArgs e)
         {
+            swapCount++;
             PrintProcessingArray(ConsoleColor.Red, e.X, e.Y);
         }
 
         private static void Compared(object sender, ComparedEventArgs e)
         {
+            compareCount++;
             PrintProcessingArray(ConsoleColor.Green, e.X, e.Y);
         }
 
