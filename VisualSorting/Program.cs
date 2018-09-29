@@ -38,6 +38,7 @@ namespace VisualSorting
                 new BubbleSort(),
                 new CombSort(),
                 new GnomeSort(),
+                new ShakerSort(),
                 new InsertionSort(),
                 new ShellSort(),
                 new SelectionSort(),
