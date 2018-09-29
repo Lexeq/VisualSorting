@@ -42,6 +42,7 @@ namespace VisualSorting
                 new InsertionSort(),
                 new ShellSort(),
                 new SelectionSort(),
+                new HeapSort(),
                 new QuickSort()
             };
 

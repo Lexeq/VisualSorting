@@ -48,6 +48,7 @@
     <Compile Include="Sortings\CombSort.cs" />
     <Compile Include="Sortings\EventArgs.cs" />
     <Compile Include="Sortings\GnomeSort.cs" />
+    <Compile Include="Sortings\HeapSort.cs" />
     <Compile Include="Sortings\InsertionSort.cs" />
     <Compile Include="Sortings\ISortingCollection.cs" />
     <Compile Include="Sortings\ListWrapper.cs" />
