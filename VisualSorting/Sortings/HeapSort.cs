@@ -8,7 +8,7 @@ namespace VisualSorting.Sortings
 {
     public class HeapSort : VisualSort
     {
-        protected override void InternalSort(ISortingCollection collection)
+        protected override void PerformSort(ISortingCollection collection)
         {
             var hs = BuildHeap(collection);
             for (int i = collection.Count - 1; i >= 0; i--)

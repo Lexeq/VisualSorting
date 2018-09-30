@@ -2,7 +2,7 @@
 {
     public class InsertionSort : VisualSort
     {
-        protected override void InternalSort(ISortingCollection collection)
+        protected override void PerformSort(ISortingCollection collection)
         {
             for (int i = 1; i < collection.Count; i++)
             {

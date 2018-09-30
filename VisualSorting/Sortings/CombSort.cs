@@ -9,7 +9,7 @@ namespace VisualSorting.Sortings
     public class CombSort : VisualSort
     {
         private const double shrinkFactor = 1.3;
-        protected override void InternalSort(ISortingCollection collection)
+        protected override void PerformSort(ISortingCollection collection)
         {
             var step = collection.Count;
             bool wasSwap = false;

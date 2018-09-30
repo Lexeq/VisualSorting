@@ -8,7 +8,7 @@ namespace VisualSorting.Sortings
 {
     class ShakerSort : VisualSort
     {
-        protected override void InternalSort(ISortingCollection collection)
+        protected override void PerformSort(ISortingCollection collection)
         {
             bool wasSwap;
             var left = 0;

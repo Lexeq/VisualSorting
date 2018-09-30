@@ -8,7 +8,7 @@ namespace VisualSorting.Sortings
 {
     public class GnomeSort : VisualSort
     {
-        protected override void InternalSort(ISortingCollection collection)
+        protected override void PerformSort(ISortingCollection collection)
         {
             int i = 1;
             while (i < collection.Count)

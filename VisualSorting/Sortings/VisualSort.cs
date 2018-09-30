@@ -24,12 +24,12 @@ namespace VisualSorting.Sortings
             ListWrapper<T> lw = new ListWrapper<T>(list, comparer);
             lw.Compared += OnCompared;
             lw.Swapped += OnSwapped;
-            InternalSort(lw);
+            PerformSort(lw);
             lw.Compared -= OnCompared;
             lw.Swapped -= OnSwapped;
         }
 
-        protected abstract void InternalSort(ISortingCollection collection);
+        protected abstract void PerformSort(ISortingCollection collection);
 
         private void OnCompared(object sender, ComparedEventArgs e)
         {

@@ -2,7 +2,7 @@
 {
     public class QuickSort : VisualSort
     {
-        protected override void InternalSort(ISortingCollection collection)
+        protected override void PerformSort(ISortingCollection collection)
         {
             Sort(collection, 0, collection.Count - 1);
         }

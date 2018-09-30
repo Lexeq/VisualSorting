@@ -10,7 +10,7 @@ namespace VisualSorting.Sortings
             1,4,10,23,57,132,301,701,1750
         });
 
-        protected override void InternalSort(ISortingCollection collection)
+        protected override void PerformSort(ISortingCollection collection)
         {
             var stepIndx = GetStepIndex(collection) + 1;
             int step;
