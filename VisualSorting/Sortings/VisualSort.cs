@@ -20,6 +20,8 @@ namespace VisualSorting.Sortings
                 throw new ArgumentNullException(nameof(list));
             if (comparer == null)
                 throw new ArgumentNullException(nameof(comparer));
+            if (list.Count < 2)
+                return;
 
             ListWrapper<T> lw = new ListWrapper<T>(list, comparer);
             lw.Compared += OnCompared;
